@@ -29,15 +29,33 @@ public class TestImpresiones {
         impresora1.imprime();
         //Se imprime el contenido después de haber sido eliminado
         impresora1.Elimina();
+        impresora1.imprime();
         //Se imprime el contenido después de darle un contenido de tipo cadena.
         impresora1.establecerContenido("esto es un test");
+        impresora1.imprime();
+         
+        System.out.println ("-------");
+            
+            
+         
         consola1.imprime();
         consola1.Elimina();
+        consola1.imprime();
         consola1.establecerContenido("Esto es un test");
+        consola1.imprime();
+        consola1.Elimina();
+        consola1.imprime();
+        
+        System.out.println ("-------");
+        
         imprimible1.imprime();
         //Si no hacíamos el ejercicio 8, pues el método Elimina no podría ejecutarse ya que no teníamos  acceso a la interfaz Borrable.
         imprimible1.Elimina();
+        imprimible1.imprime();
         imprimible1.establecerContenido("Esto es un test");
+        imprimible1.imprime();
+        imprimible1.Elimina();
+        imprimible1.imprime();
 
     }
 }
