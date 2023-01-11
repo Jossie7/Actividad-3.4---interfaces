@@ -5,8 +5,11 @@ public class Impresora implements Imprimible,Borrable {
 
     /**Hemos creado un campo llamado página, la cual es tipo cadena.
     Y también va a ser igual que la varoable texto_por_defecto declarada en nuestra interfaz.*/
-    private String pagina = texto_por_defecto;
+    private String pagina;
     //Como se sabe, el método se sobreescribir de manera obligatoria.
+    Impresora(){
+        pagina=Imprimible.TEXTO_POR_DEFECTO;
+    }
     @Override
     public void imprime() {
         //Nos va a imprimir el valor de página.
