@@ -6,7 +6,7 @@ package Interfaces;
  * una clase solo puede heredar de una sola clase.
  */
 
-public interface Imprimible extends Borrable{
+public interface Imprimible extends Borrable, Editable{
     //He creado la constante llamado texto_por_defecto, la cual hemos inicializado con el valor "página de prueba".
      String TEXTO_POR_DEFECTO = "Página de prueba";
     // Y ahora crearemos el método imprime, que no tenga parámetros y que no va a devolver nada.
