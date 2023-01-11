@@ -18,11 +18,13 @@ public class Impresora implements Imprimible,Borrable {
 
     @Override
     public void establecerContenido(String contenido) {
+        pagina=contenido;
         System.out.println(contenido);
     }
 
     @Override
     public void Elimina() {
+        pagina="";
         System.out.println();
     }
 }
