@@ -8,7 +8,7 @@ package Interfaces;
 
 public interface Imprimible extends Borrable{
     //He creado la constante llamado texto_por_defecto, la cual hemos inicializado con el valor "página de prueba".
-    final static String TEXTO_POR_DEFECTO = "Página de prueba";
+     String TEXTO_POR_DEFECTO = "Página de prueba";
     // Y ahora crearemos el método imprime, que no tenga parámetros y que no va a devolver nada.
 
     void imprime();
