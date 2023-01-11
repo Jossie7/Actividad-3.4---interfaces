@@ -4,6 +4,11 @@ public class Consola implements Imprimible,Borrable{
     //Hemos creado el campo llamado pantalla.
     //Hemos inicializado nuestra variable con el símbolo "$", este es el que nos va a salir por defecto.
     private String pantalla="$";
+    String prompt="$";
+    
+    Consola(){
+        pantalla=Imprimible.TEXTO_POR_DEFECTO;
+    }
 
 
     @Override
@@ -15,6 +20,7 @@ public class Consola implements Imprimible,Borrable{
 
     @Override
     public void establecerContenido(String contenido) {
+        pantalla= prompt + contenido;
         System.out.println(contenido+  " " +pantalla);
     }
     public void Elimina(){
